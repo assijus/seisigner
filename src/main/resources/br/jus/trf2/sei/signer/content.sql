@@ -1,0 +1,1 @@
+SELECT conteudo_assinatura conteudo, sha2(conteudo_assinatura, 256) sha256, SHA2(conteudo_assinatura, 224) segredo FROM sei.documento_conteudo where id_documento = ?

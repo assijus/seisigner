@@ -19,7 +19,7 @@ public class SeiSignerServlet extends SwaggerServlet {
 
 	@Override
 	public void initialize(ServletConfig config) throws ServletException {
-		this.INSTANCE = this;
+		INSTANCE = this;
 		setAPI(IAssijusSystem.class);
 		setActionPackage("br.jus.trf2.sei.signer");
 		setApiContextClass(AssijusSystemContext.class);

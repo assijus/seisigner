@@ -37,7 +37,6 @@ public class DocIdPdfGet implements IDocIdPdfGet {
 		try {
 			conn = Utils.getConnection();
 			pstmt = conn.prepareStatement(Utils.getSQL("content"));
-//			id.idDocumento = 3229;
 			pstmt.setLong(1, id.getIdDocumento());
 			rset = pstmt.executeQuery();
 

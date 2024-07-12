@@ -42,7 +42,6 @@ public class DocListGet implements IDocListGet {
 		try {
 			conn = Utils.getConnection();
 			pstmt = conn.prepareStatement(Utils.getSQL("list"));
-//			cpf = "322472733";
 			pstmt.setString(1, cpf);
 			rset = pstmt.executeQuery();
 

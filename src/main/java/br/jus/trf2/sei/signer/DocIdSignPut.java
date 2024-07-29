@@ -22,6 +22,7 @@ public class DocIdSignPut implements IDocIdSignPut {
 	public void run(Request req, Response resp, AssijusSystemContext ctx) throws Exception {
 		Id id = new Id(req.id);
 		enviarAssinatura(Long.toString(id.getIdAssinatura()), Long.toString(id.getIdDocumento()), req.envelope);
+		resp.status = "OK";
 	}
 
 	@Override
